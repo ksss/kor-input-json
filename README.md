@@ -1,6 +1,8 @@
 kor-input-json
 ===
 
+[![Build Status](https://travis-ci.org/ksss/kor-input-json.svg)](https://travis-ci.org/ksss/kor-input-json)
+
 JSON input plugin for kor.
 
 # Usage
