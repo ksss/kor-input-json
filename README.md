@@ -3,7 +3,7 @@ kor-input-json
 
 [![Build Status](https://travis-ci.org/ksss/kor-input-json.svg)](https://travis-ci.org/ksss/kor-input-json)
 
-JSON input plugin for kor.
+JSON input plugin for [kor](https://github.com/ksss/kor).
 
 # Usage
 
@@ -51,3 +51,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/ksss/k
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+## Refs
+
+- https://github.com/ksss/kor
