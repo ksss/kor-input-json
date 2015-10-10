@@ -29,6 +29,17 @@ JSON
       opt.parse(["--single"])
       json
     },
+    -> {
+      io = StringIO.new(<<-JSON)
+{"foo": 100, "bar": 200}
+{"bar": 500, "baz": 600}
+JSON
+      json = Kor::Input::Json.new(io)
+      opt = OptionParser.new
+      json.parse(opt)
+      opt.parse(["--guess-time=0"])
+      json
+    },
   ]
 
   def test_head(t)
@@ -59,7 +70,7 @@ JSON
         t.error("expect #{expect} got #{body}")
       end
 
-      10.times do
+      5.times do
         body = json.gets
         if body != nil
           t.error("expect nil got #{body}")
